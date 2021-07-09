@@ -1,0 +1,15 @@
+{
+  "name": "playwright-page-object",
+  "version": "1.0.0",
+  "description": "Page Object Model with playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "Andrii Baidachenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.12.3",
+    "playwright": "^1.12.3"
+  }
+}
