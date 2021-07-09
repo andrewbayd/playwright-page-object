@@ -2,7 +2,7 @@ import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   // Timeout
-  timeout: 5000,
+  timeout: 10000,
 
   use: {
     // Browser options
@@ -14,6 +14,21 @@ const config: PlaywrightTestConfig = {
     // Artifacts
     screenshot: 'only-on-failure',
   },
+
+  projects: [
+    {
+      name: 'Chrome',
+      use: { browserName: 'chromium' },
+    },
+    {
+      name: 'Firefox',
+      use: { browserName: 'firefox' },
+    },
+    {
+      name: 'WebKit',
+      use: { browserName: 'webkit' },
+    },
+  ],
 };
 
 export default config;
